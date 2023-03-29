@@ -23,7 +23,7 @@ public class GUIComponents {
         // array of string containing students' status
         String s1[] = {"Freshman", "Sophomore", "Junior", "Senior"};
 
-        JComboBox String jcboColor = new JComboBox(s1);
+        JComboBox jcboColor = new JComboBox(s1);
 
         // Create a panel to group components
         JPanel panel = new JPanel();

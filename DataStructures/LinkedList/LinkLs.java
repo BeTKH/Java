@@ -17,9 +17,9 @@ public class LinkLs {
 
         LinkedList<Integer> linkls = new LinkedList();
 
-        linkls.add("Abebe");
+        linkls.add(3);
         linkls.add(2);
-        linkls.add("Bela");
+        linkls.add(5);
 
         System.out.println(linkls);
         System.out.println("The 2nd element is : "+linkls.get(1));
