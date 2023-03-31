@@ -1,21 +1,17 @@
 package Basics.Claculations;
-import java.util.Scanner;
 
-public class AreaOfCircleMain {
+public class CalculatorMain {
     public static void main(String [] args){
 
-        // declare a constant
-        final double PI = 3.14159;
+        // calculate average of 3 numbers
+        var calc = new AvreageOfThreeCalculator();
 
-        // create an instance Scanner class ... create scanner object
-        Scanner inputs = new Scanner(System.in);
+        calc.setValues();
+        calc.averageOfThree();
 
-        System.out.print("Enter radious of the circle: ");
-        double radius = inputs.nextDouble();
-
-        // calculate area
-        double area = radius * radius * PI;
-
-        System.out.println("Area of the circle is: "+area);
+        // area of circle calculator
+        var arc = new AreaCircleCalculator();
+        arc.setRadius();
+        arc.areaOfCircle();
     }
 }
