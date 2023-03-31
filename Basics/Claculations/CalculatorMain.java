@@ -5,14 +5,14 @@ public class CalculatorMain {
 
         // calculate average of 3 numbers
         var calcAvg = new AverageOfThreeCalculator();
-        var avgReport = new ResultReporter(calcAvg); // constructor injection
+        var avgReport = new AverageReporter(calcAvg); // constructor injection
         avgReport.ToString();
 
 
 
         // area of circle calculator
-        var arc = new AreaCircleCalculator();
-        var areaReporter = new ResultReporter(arc); // constructor injection
+        var calcArc = new AreaCircleCalculator();
+        var areaReporter = new AreaReporter(calcArc); // constructor injection
 
         // show area
         areaReporter.ToString();

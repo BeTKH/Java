@@ -20,10 +20,9 @@ public class AreaCircleCalculator implements ICalculator {
     }
 
 
-    //areaOfCircle AverageOfThreeCalculator
+    // calculate area of the circle
     @Override
     public double calculate(){
-        //System.out.println("Area of the circle is: "+radiusOfCircle * radiusOfCircle * PI);
 
         return radiusOfCircle * radiusOfCircle * PI;
     }

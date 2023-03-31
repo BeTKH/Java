@@ -12,10 +12,10 @@ public class AverageOfThreeCalculator implements ICalculator {
         System.out.print("The first vaule1: ");
         double value1_ = input.nextDouble();
 
-        System.out.print("The first vaule2: ");
+        System.out.print("The second vaule2: ");
         double value2_ = input.nextDouble();
 
-        System.out.print("The first value3: ");
+        System.out.print("The third value3: ");
         double value3_ = input.nextDouble();
 
         this.value1 = value1_;
@@ -23,16 +23,11 @@ public class AverageOfThreeCalculator implements ICalculator {
         this.value3 = value3_;
     }
 
-
-
     @Override
     public double calculate(){
-
 
         //average of 3 numbers
         return (value1+value2+value3)/3;
     }
-
-
 
 }
