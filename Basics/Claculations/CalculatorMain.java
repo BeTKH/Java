@@ -4,14 +4,18 @@ public class CalculatorMain {
     public static void main(String [] args){
 
         // calculate average of 3 numbers
-        var calc = new AvreageOfThreeCalculator();
+        var calcAvg = new AverageOfThreeCalculator();
+        var avgReport = new ResultReporter(calcAvg); // constructor injection
+        avgReport.ToString();
 
-        calc.setValues();
-        calc.averageOfThree();
+
 
         // area of circle calculator
         var arc = new AreaCircleCalculator();
-        arc.setRadius();
-        arc.areaOfCircle();
+        var areaReporter = new ResultReporter(arc); // constructor injection
+
+        // show area
+        areaReporter.ToString();
+
     }
 }
