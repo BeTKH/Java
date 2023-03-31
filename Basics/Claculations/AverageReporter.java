@@ -11,7 +11,9 @@ public class AverageReporter {
 
 
     // display result
-    public void ToString(){
-        System.out.println("the average of the numbers is: "+ icalcAvg.calculate());
+    @Override
+    public String toString(){
+        //System.out.println("the average of the numbers is: "+ icalcAvg.calculate());
+        return "the average of the numbers is: "+ icalcAvg.calculate();
     }
 }
