@@ -23,5 +23,20 @@ public class LinkListMain {
         System.out.println(linkls);
         System.out.println("The 2nd element is : "+linkls.get(1));
 
+        System.out.println("size of linkedlist is: "+linkls.size());
+
+        System.out.println("element is: "+linkls.element());
+
+        System.out.println("contains 2: "+linkls.contains(2));
+
+        System.out.println("get value at index 0: "+linkls.get(0));
+
+        System.out.println("index of 4 is: "+linkls.indexOf(4));
+
+        System.out.println("peeking: "+linkls.peekLast());
+        System.out.println("linkedlist after peeking: "+linkls);
+
+
+
     }
 }
