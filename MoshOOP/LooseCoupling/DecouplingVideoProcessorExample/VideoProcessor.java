@@ -1,8 +1,19 @@
 package MoshOOP.LooseCoupling.DecouplingVideoProcessorExample;
 
 public class VideoProcessor {
+
+    private VideoEncoder encoder;
+
+    // constructor injection
+    public VideoProcessor(VideoEncoder encoder_) {
+        this.encoder = encoder_;
+    }
+
+
+
     public void process(Video video) {
-        var encoder = new VideoEncoder();
+
+        // decoupled video encoder
         encoder.encode(video);
 
         var database = new VideoDatabase();

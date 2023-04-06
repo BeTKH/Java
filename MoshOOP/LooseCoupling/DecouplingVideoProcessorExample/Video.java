@@ -1,9 +1,11 @@
 package MoshOOP.LooseCoupling.DecouplingVideoProcessorExample;
 
 public class Video {
+
     private String fileName;
     private String title;
     private User user;
+
 
     public String getFileName() {
         return fileName;
