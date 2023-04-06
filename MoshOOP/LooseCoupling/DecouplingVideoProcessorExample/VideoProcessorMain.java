@@ -2,7 +2,7 @@ package MoshOOP.LooseCoupling.DecouplingVideoProcessorExample;
 
 public class VideoProcessorMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] justNameOfVariable) {
 
 
 
@@ -13,16 +13,12 @@ public class VideoProcessorMain {
 
 
 
-        // create an instance of encoder from the interface XVideoEncoder
+        // create instance of encoder,database & email service  from respective interfaces
         XVideoEncoder xEncoder = new XVideoEncoder();
-
-        // create a database instance from the interface xVideoDatabase
         xVideoDatabase xDatabase = new xVideoDatabase();
-
-        // create an instance of the email service from the xEmailService interface
         xEmailService xEmail = new xEmailService();
 
-        // pass the encoder & databse via constructor injection
+        // inject the objects via constructors - constructor injection
         var processor = new VideoProcessor(xEncoder, xDatabase, xEmail);
         processor.process(video);
     }
