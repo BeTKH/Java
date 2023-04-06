@@ -2,11 +2,20 @@ package MoshOOP.LooseCoupling.DecouplingVideoProcessorExample;
 
 public class VideoProcessor {
 
-    private VideoEncoder encoder;
 
-    // constructor injection
-    public VideoProcessor(VideoEncoder encoder_) {
+    private VideoEncoder encoder;
+    private VideoDatabase database;
+    private EmailService emailService;
+
+
+
+    // constructor injection-#1
+    public VideoProcessor(VideoEncoder encoder_,
+                          VideoDatabase database_,
+                          EmailService emailService_) {
         this.encoder = encoder_;
+        this.database = database_;
+        this.emailService= emailService_;
     }
 
 
@@ -16,10 +25,10 @@ public class VideoProcessor {
         // decoupled video encoder
         encoder.encode(video);
 
-        var database = new VideoDatabase();
+        // decoupled database
         database.store(video);
 
-        var emailService = new EmailService();
+        // decoupled the email service
         emailService.sendEmail(video.getUser());
     }
 }

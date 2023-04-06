@@ -13,11 +13,17 @@ public class VideoProcessorMain {
 
 
 
-        // create an instance of encoder from the interface
+        // create an instance of encoder from the interface XVideoEncoder
         XVideoEncoder xEncoder = new XVideoEncoder();
 
-        // pass the encoder via constructor injection
-        var processor = new VideoProcessor(xEncoder);
+        // create a database instance from the interface xVideoDatabase
+        xVideoDatabase xDatabase = new xVideoDatabase();
+
+        // create an instance of the email service from the xEmailService interface
+        xEmailService xEmail = new xEmailService();
+
+        // pass the encoder & databse via constructor injection
+        var processor = new VideoProcessor(xEncoder, xDatabase, xEmail);
         processor.process(video);
     }
 }
