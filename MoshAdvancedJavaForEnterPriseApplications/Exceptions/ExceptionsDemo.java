@@ -17,10 +17,12 @@ public class ExceptionsDemo {
             var value = reader.read();
 
         } catch (FileNotFoundException e) {   // catch block  for FileReader()
-            e.getMessage();
+            //e.getMessage();
+            System.out.println("File does not exist");
 
         } catch (IOException e) {             // catch block  for .read()
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println("Could not read data");
         }
 
     }
