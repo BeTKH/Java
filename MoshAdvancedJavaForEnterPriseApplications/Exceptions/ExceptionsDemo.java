@@ -10,12 +10,12 @@ public class ExceptionsDemo {
 
     public static void show(){
 
+        FileReader reader = null;
 
         // alt + enter - surround with try-catch
-
         try {
 
-            var reader = new FileReader("file.txt");
+            reader = new FileReader("file.txt");
             var value = reader.read();
             new SimpleDateFormat().parse("");
 
@@ -23,6 +23,19 @@ public class ExceptionsDemo {
         } catch (IOException | ParseException e) {    // combining multiple exceptions
             //e.printStackTrace();
             System.out.println("Could not read data");
-    }
+        }
+        finally {
+
+            // release resources here, close files ... etc
+            if (reader != null) {
+
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
 }
 }
