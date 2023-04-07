@@ -3,6 +3,8 @@ package MoshAdvancedJavaForEnterPriseApplications.Exceptions;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class ExceptionsDemo {
 
@@ -15,15 +17,12 @@ public class ExceptionsDemo {
 
             var reader = new FileReader("file.txt");
             var value = reader.read();
+            new SimpleDateFormat().parse("");
 
-        } catch (FileNotFoundException e) {   // catch block  for FileReader()
-            //e.getMessage();
-            System.out.println("File does not exist");
 
-        } catch (IOException e) {             // catch block  for .read()
+        } catch (IOException | ParseException e) {    // combining multiple exceptions
             //e.printStackTrace();
             System.out.println("Could not read data");
-        }
-
     }
+}
 }
