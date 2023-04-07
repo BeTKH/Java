@@ -1,7 +1,8 @@
 package MoshAdvancedJavaForEnterPriseApplications.Exceptions;
 
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,12 +11,15 @@ public class ExceptionsDemo {
 
     public static void show(){
 
-        FileReader reader = null;
 
-        // alt + enter - surround with try-catch
-        try {
+        // try with resource statement - a statement with >=1 resource
+        // the JAVAC will release the resource - close file- etc
 
-            reader = new FileReader("file.txt");
+        try(
+                var reader = new FileReader("file.txt");
+                var writer = new FileWriter("...");
+        ) {
+
             var value = reader.read();
             new SimpleDateFormat().parse("");
 
@@ -24,18 +28,6 @@ public class ExceptionsDemo {
             //e.printStackTrace();
             System.out.println("Could not read data");
         }
-        finally {
 
-            // release resources here, close files ... etc
-            if (reader != null) {
-
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }
 }
 }
