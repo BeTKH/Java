@@ -1,4 +1,4 @@
-package MoshAdvancedJavaForEnterPriseApplications.Exceptions;
+package MoshAdvancedJavaForEnterPriseApplications.ExceptionHandling;
 
 
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package MoshAdvancedJavaForEnterPriseApplications.Exceptions;
+package MoshAdvancedJavaForEnterPriseApplications.ExceptionHandling;
 
 public class ExceptionMain {
 
