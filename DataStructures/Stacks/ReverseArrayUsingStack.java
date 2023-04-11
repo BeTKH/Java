@@ -19,24 +19,24 @@ public class ReverseArrayUsingStack {
 
     // method that reverse an arry
 
-    public static int[] reverseArray(int[] lst){
+    public static int[] reverseArray(int[] list_){
 
         // create stack object
         Stack<Integer> stk = new Stack<Integer>();
 
         // insert into the stack
-        for (int i = 0; i < lst.length ; i++){
-            stk.push(lst[i]);
+        for (int i = 0; i < list_.length ; i++){
+            stk.push(list_[i]);
         }
 
         // from the stack back to the arry
-        for (int j = 0; j < lst.length ; j++){
+        for (int j = 0; j < list_.length ; j++){
 
             // take the top element from the stack and store in the array
-            lst[j] = stk.pop();
+            list_[j] = stk.pop();
         }
 
-        return lst;
+        return list_;
 
     }
 
