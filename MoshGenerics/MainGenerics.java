@@ -1,6 +1,7 @@
 package MoshGenerics;
 
 import MoshGenerics.Problem.ListInts;
+import MoshGenerics.sGoodMethodUsingGeneric.GenericList;
 import MoshGenerics.sPoorMethodUsingObjectType.ListsObj;
 
 public class MainGenerics {
@@ -61,6 +62,10 @@ public class MainGenerics {
         /**
          * solution: Generic classes!
          * */
+
+
+        var genList = new GenericList<Integer>();
+        genList.add("a"); // this is the advantage of using genericlist - ensures all our entries to be acceptable
 
 
     }
