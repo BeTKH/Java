@@ -12,7 +12,7 @@ public class MainGenerics {
 
         listINT.addItem(1);
         int val = listINT.getItem(0);
-        System.out.println("listINT is: "+val);
+        System.out.println("listINT using ListInts class is: "+val);
 
         // The problem:
         // we can't add strings -- our listINT accommodates only int
@@ -56,16 +56,39 @@ public class MainGenerics {
          * */
 
         String stringValue = (String) lsOBJ.getItem(1);
-        System.out.println("stringValue is: "+stringValue);
+        System.out.println("stringValue using ListsObj class is: "+stringValue);
 
 
         /**
          * solution: Generic classes!
+         *
+         * Advantages of generics:
+         * - type safety
+         * - casting not required
+         * - compile-time checking / Improved Code Readability
+         * - code re-usability
          * */
 
 
-        var genList = new GenericList<Integer>();
-        genList.add("a"); // this is the advantage of using genericlist - ensures all our entries to be acceptable
+        var genListINT = new GenericList<Integer>();
+        genListINT.add(1);
+        genListINT.add(2);
+
+        // genListINT.add("x"); CAN'T BE APPLIED
+
+        int genIntVal = genListINT.get(0);
+        System.out.println("genIntVal using GenericList is: "+genIntVal);
+
+
+
+        // code-reuse: we can use the generic class to create another string list
+        GenericList genListSTR = new GenericList<String>();
+        genListSTR.add("ball");
+        genListSTR.add("x");
+
+        var genStrVal1 = genListSTR.get(0);
+        System.out.println("genStrVal1 using GenericList is: "+genStrVal1);
+
 
 
     }
