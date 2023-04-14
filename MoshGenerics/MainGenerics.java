@@ -70,9 +70,11 @@ public class MainGenerics {
          * */
 
 
+        //GenericList<Integer> genListINT = new GenericList<>(); also possible
         var genListINT = new GenericList<Integer>();
         genListINT.add(1);
         genListINT.add(2);
+        genListINT.add(3);
 
         // genListINT.add("x"); CAN'T BE APPLIED
 
