@@ -1,7 +1,7 @@
 package MoshGenerics.ConstrainGenerics;
 
 /**
- * constraints (Bounded type parameters) are set using:
+ * constraints (Bounded generic type parameters) are set using:
  * - classes or
  * - interfaces (-able)
  * */
