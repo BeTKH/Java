@@ -17,8 +17,6 @@ public class SeleniumMainDemo {
 
         driver.get("http://students.cs.ndsu.nodak.edu/~myronovy/users/login.php");
 
-        //This method fetches the Title of the current page.
-        //Accepts nothing as a parameter and returns a String value.
 
 
 
