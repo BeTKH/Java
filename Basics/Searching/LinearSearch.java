@@ -1,4 +1,4 @@
-package Searching;
+package Basics.Searching;
 import java.util.Scanner;
 
 public class LinearSearch {

@@ -1,4 +1,4 @@
-package Sorting;
+package Basics.Sorting;
 import java.util.Arrays;
 
 public class SelectionSortNoMethod {
