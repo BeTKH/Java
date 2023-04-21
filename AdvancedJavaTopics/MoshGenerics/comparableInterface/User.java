@@ -1,4 +1,4 @@
-package MoshGenerics.comparableInterface;
+package AdvancedJavaTopics.MoshGenerics.comparableInterface;
 
 
 

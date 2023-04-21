@@ -1,4 +1,4 @@
-package MoshAdvancedJavaForEnterPriseApplications.ThrowingExceptions;
+package AdvancedJavaTopics.MoshAdvancedJavaForEnterPriseApplications.ThrowingExceptions;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package MoshGenerics.sPoorMethodUsingObjectType;
+package AdvancedJavaTopics.MoshGenerics.sPoorMethodUsingObjectType;
 
 public class ListsObj {
 

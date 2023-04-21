@@ -1,6 +1,6 @@
-package MoshGenerics;
+package AdvancedJavaTopics.MoshGenerics;
 
-import MoshGenerics.comparableInterface.User;
+import AdvancedJavaTopics.MoshGenerics.comparableInterface.User;
 
 public class MainCompareUserObjects {
 

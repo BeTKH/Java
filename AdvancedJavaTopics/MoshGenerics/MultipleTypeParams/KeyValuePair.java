@@ -1,4 +1,4 @@
-package MoshGenerics.MultipleTypeParams;
+package AdvancedJavaTopics.MoshGenerics.MultipleTypeParams;
 
 public class KeyValuePair<K,V> {
 

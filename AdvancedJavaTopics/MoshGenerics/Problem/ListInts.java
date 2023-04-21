@@ -1,4 +1,4 @@
-package MoshGenerics.Problem;
+package AdvancedJavaTopics.MoshGenerics.Problem;
 
 /*class for listing Integers*/
 

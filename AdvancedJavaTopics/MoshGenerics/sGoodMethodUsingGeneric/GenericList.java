@@ -1,6 +1,4 @@
-package MoshGenerics.sGoodMethodUsingGeneric;
-
-import java.util.Objects;
+package AdvancedJavaTopics.MoshGenerics.sGoodMethodUsingGeneric;
 
 public class GenericList<T> {
 

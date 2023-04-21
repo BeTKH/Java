@@ -1,8 +1,8 @@
-package MoshGenerics;
+package AdvancedJavaTopics.MoshGenerics;
 
-import MoshGenerics.Problem.ListInts;
-import MoshGenerics.sGoodMethodUsingGeneric.GenericList;
-import MoshGenerics.sPoorMethodUsingObjectType.ListsObj;
+import AdvancedJavaTopics.MoshGenerics.Problem.ListInts;
+import AdvancedJavaTopics.MoshGenerics.sGoodMethodUsingGeneric.GenericList;
+import AdvancedJavaTopics.MoshGenerics.sPoorMethodUsingObjectType.ListsObj;
 
 public class MainGenerics {
 

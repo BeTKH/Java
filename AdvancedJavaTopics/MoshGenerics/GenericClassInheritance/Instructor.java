@@ -1,6 +1,6 @@
-package MoshGenerics.GenericClassInheritance;
+package AdvancedJavaTopics.MoshGenerics.GenericClassInheritance;
 
-import MoshGenerics.comparableInterface.User;
+import AdvancedJavaTopics.MoshGenerics.comparableInterface.User;
 
 public class Instructor extends User {
 

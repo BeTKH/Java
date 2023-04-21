@@ -1,4 +1,4 @@
-package MoshGenerics.GenericMethods;
+package AdvancedJavaTopics.MoshGenerics.GenericMethods;
 
 
 /**

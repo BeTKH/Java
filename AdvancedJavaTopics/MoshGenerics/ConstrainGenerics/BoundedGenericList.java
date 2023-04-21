@@ -1,4 +1,4 @@
-package MoshGenerics.ConstrainGenerics;
+package AdvancedJavaTopics.MoshGenerics.ConstrainGenerics;
 
 /**
  * constraints (Bounded generic type parameters) are set using:

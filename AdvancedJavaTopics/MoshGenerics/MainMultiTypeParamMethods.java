@@ -1,6 +1,6 @@
-package MoshGenerics;
+package AdvancedJavaTopics.MoshGenerics;
 
-import MoshGenerics.MultipleTypeParams.UtilsMultitypeParameters;
+import AdvancedJavaTopics.MoshGenerics.MultipleTypeParams.UtilsMultitypeParameters;
 
 public class MainMultiTypeParamMethods {
 

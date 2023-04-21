@@ -1,7 +1,7 @@
-package MoshGenerics;
+package AdvancedJavaTopics.MoshGenerics;
 
-import MoshGenerics.GenericMethods.Utils;
-import MoshGenerics.comparableInterface.User;
+import AdvancedJavaTopics.MoshGenerics.GenericMethods.Utils;
+import AdvancedJavaTopics.MoshGenerics.comparableInterface.User;
 
 public class MainGenericMethods {
 
