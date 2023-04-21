@@ -1,8 +1,10 @@
 package AdvancedJavaTopics.MoshGenerics.sGoodMethodUsingGeneric;
 
-public class GenericList<T> {
+import java.util.Iterator;
 
-    private T[] items = (T[]) new Object[10];
+public class GenericList<T> implements Iterable<T>{
+
+    public T[] items = (T[]) new Object[10];
     private int count;
 
     public void add(T item_){
@@ -11,5 +13,11 @@ public class GenericList<T> {
 
     public T get(int index_){
         return items[index_];
+    }
+
+
+    @Override
+    public Iterator<T> iterator() {
+        return null;
     }
 }
