@@ -20,12 +20,14 @@ public class GenericList<T> implements Iterable<T>{
         return new ListIterator(this);
     }
 
+
     private class ListIterator implements Iterator<T> {
         private GenericList<T> list;
         private int index;
 
-        public ListIterator(GenericList<T> list) {
-            this.list = list;
+        // setter
+        public ListIterator(GenericList<T> list_) {
+            this.list = list_;
         }
 
         @Override
