@@ -10,6 +10,5 @@ public class ControlCurcle1 {
 
     JPanel panel = new JPanel();
 
-    panel.add(jbtEnlarge);
-    panel.add(jbtShrink);
+
 }
