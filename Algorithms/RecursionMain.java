@@ -12,8 +12,13 @@ public class RecursionMain {
         }
         System.out.println();
 
+
         // recursion
-        recurser(0);
+        recurser(6);
+
+
+        // fibonacci series at i = 5
+        System.out.println("\nfibonacci number at index 0 is: "+fibonacciate(0));
 
 
 
@@ -36,4 +41,23 @@ public class RecursionMain {
         System.out.println("end of the call where i ="+i);
         return i;
     }
+
+
+
+
+    // application of recursion - Fibonacci series
+    private static int fibonacciate(int n){
+
+        if (n <= 1)
+            return n;
+
+        int oneStepBack = fibonacciate(n-1);
+        int twoStepBack = fibonacciate(n-2);
+
+        return oneStepBack + twoStepBack;
+
+    }
+
+
+
 }
