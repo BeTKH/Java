@@ -22,6 +22,10 @@ public class RecursionMain {
     // recusrion - a function that calls it self!
     private static int recurser(int i) {
 
+        /**
+         * baseCase - a condition that tells when to stop the recursion
+         * without this the recurion will be infinite loop
+         * */
         if (i > 9){
             return i;
         }
