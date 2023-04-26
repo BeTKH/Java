@@ -10,18 +10,19 @@ public class RecursionMain {
 
             System.out.println("Iterating :"+i);
         }
-        System.out.println("");
+        System.out.println();
 
         // recursion
-        recurser(1);
+        recurser(0);
 
 
 
     }
 
+    // recusrion - a function that calls it self!
     private static int recurser(int i) {
 
-        if (i > 10){
+        if (i > 9){
             return i;
         }
 
