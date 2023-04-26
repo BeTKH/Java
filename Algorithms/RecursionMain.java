@@ -17,8 +17,8 @@ public class RecursionMain {
         recurser(6);
 
 
-        // fibonacci series at i = 5
-        System.out.println("\nfibonacci number at index 0 is: "+fibonacciate(0));
+        // fibonacci series at i = 10
+        System.out.println("\nfibonacci number at index 10 is: "+fibonacciate(10));
 
 
 
