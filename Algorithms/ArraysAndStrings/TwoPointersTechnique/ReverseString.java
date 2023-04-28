@@ -13,34 +13,37 @@ public class ReverseString {
     public static void main(String[] args) {
 
         String originalString = "Hello world";
-        String reversed = reverseString(originalString);
+        char[] originalCharArr = originalString.toCharArray();
 
         System.out.println("Original String: " + originalString);
-        System.out.println("Reversed String: " + reversed);
+        reverseString(originalCharArr);
+
+
+
 
     }
 
 
-    public static String reverseString(String originalStr){
+    public static void reverseString(char[] s){
 
-        // convert string to char array
-        char[] charArray = originalStr.toCharArray();
+
 
         // create two pointers: one at the beginning and one at the end of the array
         int left = 0;
-        int right = charArray.length - 1;
+        int right = s.length - 1;
 
         // loop through the array, swapping the characters at the two pointers
         while (left < right) {
-            char temp = charArray[left];
-            charArray[left] = charArray[right];
-            charArray[right] = temp;
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
             left++;
             right--;
         }
 
-        // convert the character array back to a string and return it
-        return new String(charArray);
+        // convert array to string
+
+        System.out.println("Reversed String: " + String.valueOf(s));
 
     }
 
