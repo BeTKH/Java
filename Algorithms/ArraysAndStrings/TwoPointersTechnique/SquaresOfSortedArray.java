@@ -21,7 +21,7 @@ public class SquaresOfSortedArray {
 
 
 
-        System.out.println(Arrays.toString(sortArr(arr)));
+        System.out.println(Arrays.toString(squareNSort(arr)));
 
     }
 
@@ -40,7 +40,7 @@ public class SquaresOfSortedArray {
      * */
 
 
-    public static int[] sortArr(int[] arrSQ){
+    public static int[] squareNSort(int[] arrSQ){
 
 
         int[] result = new int[arrSQ.length];
