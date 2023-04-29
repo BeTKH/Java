@@ -19,44 +19,47 @@ public class SquaresOfSortedArray {
 
         int[] arr = {-4,-1,0,3,10};
 
-        int[] sqArr = squareArray(arr);
 
-        System.out.println(Arrays.toString(sqArr));
 
-        System.out.println(Arrays.toString(sortArr(sqArr)));
+        System.out.println(Arrays.toString(sortArr(arr)));
 
     }
 
-
-    public static int[] squareArray(int[] numArr){
-
-        int[] squaredArr = new int[numArr.length-1];
-
-        for (int i = 0; i < numArr.length-1 ; i++){
-            squaredArr[i] = numArr[i] * numArr[i];
-
-        }
-
-        return squaredArr;
-    }
+    /**
+     * public static int[] squareArray(int[] numArr){
+     *
+     *         int[] squaredArr = new int[numArr.length-1];
+     *
+     *         for (int i = 0; i < numArr.length-1 ; i++){
+     *             squaredArr[i] = numArr[i] * numArr[i];
+     *
+     *         }
+     *
+     *         return squaredArr;
+     *     }
+     * */
 
 
     public static int[] sortArr(int[] arrSQ){
 
-        int n = arrSQ.length;
-        int[] result = new int[n];
-        int left = 0, right = n - 1, index = n - 1;
 
-        while (left <= right) {
-            //int leftSquare = arrSQ[left] * arrSQ[left];
-            //int rightSquare = arrSQ[right] * arrSQ[right];
+        int[] result = new int[arrSQ.length];
 
-            if (arrSQ[left] > arrSQ[right]) {
-                result[index] = arrSQ[left];
-                left++;
+        int leftPointer = 0;
+        int rightPoiter = arrSQ.length - 1;
+        int index = arrSQ.length - 1;
+
+        while (leftPointer <= rightPoiter) {
+
+            int leftSquare = arrSQ[leftPointer] * arrSQ[leftPointer];
+            int rightSquare = arrSQ[rightPoiter] * arrSQ[rightPoiter];
+
+            if (leftSquare > rightSquare) {
+                result[index] = leftSquare;
+                leftPointer++;
             } else {
-                result[index] = arrSQ[right];
-                right--;
+                result[index] = rightSquare;
+                rightPoiter--;
             }
             index--;
         }
