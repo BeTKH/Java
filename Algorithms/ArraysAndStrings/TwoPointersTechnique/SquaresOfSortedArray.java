@@ -23,6 +23,8 @@ public class SquaresOfSortedArray {
 
         System.out.println(Arrays.toString(sqArr));
 
+        System.out.println(Arrays.toString(sortArr(sqArr)));
+
     }
 
 
@@ -36,6 +38,32 @@ public class SquaresOfSortedArray {
         }
 
         return squaredArr;
+    }
+
+
+    public static int[] sortArr(int[] arrSQ){
+
+        int n = arrSQ.length;
+        int[] result = new int[n];
+        int left = 0, right = n - 1, index = n - 1;
+
+        while (left <= right) {
+            //int leftSquare = arrSQ[left] * arrSQ[left];
+            //int rightSquare = arrSQ[right] * arrSQ[right];
+
+            if (arrSQ[left] > arrSQ[right]) {
+                result[index] = arrSQ[left];
+                left++;
+            } else {
+                result[index] = arrSQ[right];
+                right--;
+            }
+            index--;
+        }
+
+        return result;
+
+
     }
 
 
