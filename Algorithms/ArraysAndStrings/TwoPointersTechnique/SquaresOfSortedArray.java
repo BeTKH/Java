@@ -40,31 +40,20 @@ public class SquaresOfSortedArray {
      * */
 
 
-    public static int[] squareNSort(int[] arrSQ){
+    public static int[] squareNSort(int[] nums){
 
 
-        int[] result = new int[arrSQ.length];
+        int[] squaredArray = new int[nums.length];
 
-        int leftPointer = 0;
-        int rightPoiter = arrSQ.length - 1;
-        int index = arrSQ.length - 1;
+        int i =0;
 
-        while (leftPointer <= rightPoiter) {
-
-            int leftSquare = arrSQ[leftPointer] * arrSQ[leftPointer];
-            int rightSquare = arrSQ[rightPoiter] * arrSQ[rightPoiter];
-
-            if (leftSquare > rightSquare) {
-                result[index] = leftSquare;
-                leftPointer++;
-            } else {
-                result[index] = rightSquare;
-                rightPoiter--;
-            }
-            index--;
+        for(int num:nums){
+            squaredArray[i++] = num *num;
         }
 
-        return result;
+        Arrays.sort(squaredArray);
+        return squaredArray;
+
 
 
     }
