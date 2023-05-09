@@ -17,7 +17,7 @@ public class SquaresOfSortedArray {
 
     public static void main(String[] args) {
 
-        int[] arr = {-4,-1,0,3,10};
+        int[] arr = {-4,-1,0,3,10,12};
 
 
 
