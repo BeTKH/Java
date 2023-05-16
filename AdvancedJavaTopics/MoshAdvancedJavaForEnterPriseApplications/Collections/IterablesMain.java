@@ -6,12 +6,13 @@ public class IterablesMain {
 
     public static void main(String[] args) {
 
-        var list = new GenericList<String>();
+        GenericList<String> list = new GenericList<String>();
+
 
         list.add("a");
         list.add("b");
 
-        var iterator = list.iterator();
+        list iterator = list.iterator();
 
 
         /**

@@ -4,6 +4,7 @@ package AdvancedJavaTopics.MoshAdvancedJavaForEnterPriseApplications.ExceptionHa
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Reader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -16,11 +17,11 @@ public class ExceptionsDemo {
         // the JAVAC will release the resource - close file- etc
 
         try(
-                var reader = new FileReader("file.txt");
-                var writer = new FileWriter("...");
+                FileReader reader_ = new FileReader("file.txt");
+                FileWriter writer = new FileWriter("...");
         ) {
 
-            var value = reader.read();
+             value = reader_.read();
             new SimpleDateFormat().parse("");
 
 
