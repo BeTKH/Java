@@ -8,7 +8,7 @@ public class RecursionMain {
         // iteration
         for (int i = 0; i < 10; i++){
 
-            System.out.println("Iterating :"+i);
+            System.out.println("Iterating .. :"+i);
         }
         System.out.println();
 
