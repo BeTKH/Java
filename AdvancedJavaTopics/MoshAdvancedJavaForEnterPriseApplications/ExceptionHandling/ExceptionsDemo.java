@@ -20,8 +20,7 @@ public class ExceptionsDemo {
                 FileReader reader_ = new FileReader("file.txt");
                 FileWriter writer = new FileWriter("...");
         ) {
-
-             value = reader_.read();
+             int value = reader_.read();
             new SimpleDateFormat().parse("");
 
 
